@@ -18,9 +18,9 @@ Desenvolver um aplicativo que não só seja funcional e fácil de usar, mas que 
 
 
 ## 📋 Backlog do Produto <a id="backlog"></a>
-| Sprint | User Stories (US)  | Tarefa | Prioridade | Status | Entrega |
+| Sprint | User Stories (US) | Funcionalidades | Tarefa | Prioridade | Status | Entrega |
 | ------ | -- | ------ | ---------- | ------ | ------- |
-| 2 | "Como usuário, quero passar por um processo de onboarding que me ajude a entender as funcionalidades do aplicativo." | Onboarding do Usuário | 95 | ⏳ | 05/05 |
+| 2 | "Como usuário, quero passar por um processo de onboarding que me ajude a entender as funcionalidades do aplicativo." | Onboarding do Usuário | Criar fluxo de onboarding com explicações sobre funcionalidades principais (respiração, meditação, rastreamento de humor, lembretes) | 95 | ⏳ | 05/05 |
 | 2 | "Como usuário, quero uma tela inicial que me forneça acesso rápido às principais funcionalidades." | Tela Inicial com Acesso Rápido | 90 | ⏳ | 05/05 |
 | 2 | "Como usuário, quero criar uma conta ou fazer login usando e-mail ou redes sociais." | Criação de Conta e Login  | 85 | ⏳ | 05/05 |
 | 3 | "Como usuário, quero acessar uma biblioteca de exercícios de relaxamento." | Biblioteca de Exercícios de Relaxamento  | 75 | ⏳ | 26/05 |
