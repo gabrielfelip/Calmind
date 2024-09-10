@@ -18,18 +18,18 @@ Desenvolver um aplicativo que não só seja funcional e fácil de usar, mas que 
 
 
 ## 📋 Backlog do Produto <a id="backlog"></a>
-| Sprint | User Stories (US) | Funcionalidades | Tarefa | Prioridade | Status | Entrega |
+| Sprint | User Stories (US) | Funcionalidade | Tarefa | Prioridade | Status | Entrega |
 | ------ | -- | ------ | ---------- | ------------| ------ | ------- |
 | 2 | "Como usuário, quero passar por um processo de onboarding que me ajude a entender as funcionalidades do aplicativo." | Onboarding do Usuário | Criar fluxo de onboarding com explicações sobre funcionalidades principais (respiração, meditação, rastreamento de humor, lembretes) | 95 | ⏳ | 05/05 |
-| 2 | "Como usuário, quero uma tela inicial que me forneça acesso rápido às principais funcionalidades." | Tela Inicial com Acesso Rápido | 90 | ⏳ | 05/05 |
-| 2 | "Como usuário, quero criar uma conta ou fazer login usando e-mail ou redes sociais." | Criação de Conta e Login  | 85 | ⏳ | 05/05 |
-| 3 | "Como usuário, quero acessar uma biblioteca de exercícios de relaxamento." | Biblioteca de Exercícios de Relaxamento  | 75 | ⏳ | 26/05 |
-| 3 | "Como usuário, quero configurar lembretes e notificações para realizar exercícios de gerenciamento de estresse." | Lembretes e Notificações | 70 | ⏳ | 26/05 |
-| 3 | "Como usuário, quero acessar exercícios de mindfulness guiados." | Exercícios de Mindfulness |65  | ⏳ | 26/05 |
-| 3 | "Como usuário, quero registrar meu humor diário" | Registro de Humor Diário | 60 | ⏳ | 26/05 |
-| 3 | "Como usuário, quero definir e acompanhar metas de saúde mental." | Acompanhamento de Metas | 55 | ⏳ | 26/05 |
-| 4 | "Como usuário, quero receber feedback em tempo real durante os exercícios." | Feedback em Tempo Real | 30 | ⏳ | 16/06 |
-| 4 | "Como usuário, quero poder fornecer feedback sobre o aplicativo e avaliar as funcionalidades." | Feedback do Usuário e Avaliações | 20 | ⏳ | 16/06 |
+| 2 | "Como usuário, quero que a tela inicial me permita acessar rapidamente as principais funcionalidades." | Tela Inicial com Acesso Rápido |  Criar uma tela inicial com ícones para acesso direto às funcionalidades de respiração, meditação e rastreamento de humor | 90 | ⏳ | 05/05 |
+| 2 | "Como usuário, quero criar uma conta ou fazer login usando o e-mail ou redes sociais" | Criação de Conta e Login  | Implementar sistema de login por e-mail e redes sociais (Google, Facebook) | 85 | ⏳ | 05/05 |
+| 3 | "Como usuário, quero receber lembretes e notificações diárias para gerenciar meu estresse." | Lembretes e Notificações | Implementar sistema de notificações personalizáveis para lembretes diários | 75 | ⏳ | 26/05 |
+| 3 | "Como usuário, quero acessar uma biblioteca de exercícios de respiração para reduzir o estresse." | Exercícios de Respiração | Criar biblioteca de exercícios de respiração com temporizador e guias visuais | 70 | ⏳ | 26/05 |
+| 3 | "Como usuário, quero acessar exercícios de meditação guiada para relaxar e melhorar meu bem-estar." | Meditação Guiada | Criar exercícios de meditação guiada com áudio e visualização | 65 | ⏳ | 26/05 |
+| 3 | "Como usuário, quero configurar lembretes personalizados para exercícios de meditação e respiração" | RPersonalização de Lembretes | Adicionar opção de personalização de lembretes para exercícios específicos (meditação, respiração) | 60 | ⏳ | 26/05 |
+| 3 | "Como usuário, quero registrar meu humor diário para acompanhar meu estado emocional." | Registro de Humor Diário | Implementar formulário simples para registro diário de humor e armazenar no banco de dados | 55 | ⏳ | 26/05 |
+| 4 | "Como usuário, quero ver o histórico do meu humor para acompanhar padrões de estresse." | Histórico de Humor | Criar visualização de histórico de humor por semana e mês | 30 | ⏳ | 16/06 |
+| 4 | "Como usuário, quero ter acesso a metas e acompanhamento de progresso no gerenciamento de estresse" | Definição de Metas e Progresso | Implementar sistema de metas personalizadas para o usuário definir e acompanhar seu progresso no uso do app | 20 | ⏳ | 16/06 |
 
 
 ## 🗂 Requisitos <a id="requisitos"></a>
