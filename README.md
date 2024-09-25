@@ -3,7 +3,6 @@
   <p align="center">
      <a href ="#objetivo">Objetivo</a>  •
      <a href ="#desafio">Desafio</a>  •
-     <a href ="#mvp">MVP</a>  •
      <a href ="#backlog">Backlog</a>  •
      <a href ="#requisitos">Requisitos</a>  •
    </p>
