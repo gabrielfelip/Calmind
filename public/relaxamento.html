@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Relaxamento</title>
+</head>
+<body>
+    <div id="relaxation-section">
+        <h2>Exercício de Relaxamento Guiado</h2>
+        <button id="start-relaxation">Iniciar Relaxamento</button>
+        <p id="timer">Tempo restante: 60s</p>
+        <p id="instructions">Clique em "Iniciar Relaxamento" para começar.</p>
+    </div>
+
+    <script>
+        // Função de Relaxamento Guiado com Temporizador
+        document.addEventListener("DOMContentLoaded", () => {
+            const startButton = document.getElementById("start-relaxation");
+            const timerDisplay = document.getElementById("timer");
+            const instructionsDisplay = document.getElementById("instructions");
+
+            let relaxationInterval;
+            let remainingTime = 60; // Tempo do exercício em segundos
+
+            // Função para iniciar o exercício de relaxamento
+            function startRelaxation() {
+                remainingTime = 60;
+                instructionsDisplay.textContent = "Respire fundo... Prepare-se para o relaxamento.";
+                
+                relaxationInterval = setInterval(() => {
+                    if (remainingTime > 0) {
+                        updateTimer();
+                        showInstructions(remainingTime);
+                        remainingTime--;
+                    } else {
+                        clearInterval(relaxationInterval);
+                        instructionsDisplay.textContent = "Exercício concluído! Espero que você esteja mais relaxado.";
+                    }
+                }, 1000);
+            }
+
+            // Função para atualizar o temporizador na tela
+            function updateTimer() {
+                timerDisplay.textContent = `Tempo restante: ${remainingTime}s`;
+            }
+
+            // Função para exibir instruções de relaxamento com base no tempo restante
+            function showInstructions(time) {
+                if (time % 10 === 0) {
+                    instructionsDisplay.textContent = "Inspire profundamente..."; 
+                } else if (time % 10 === 5) {
+                    instructionsDisplay.textContent = "Expire lentamente...";
+                }
+            }
+
+            // Evento para iniciar o exercício ao clicar no botão
+            startButton.addEventListener("click", startRelaxation);
+        });
+    </script>
+</body>
+</html>

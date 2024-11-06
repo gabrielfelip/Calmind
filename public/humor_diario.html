@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Humor Diário</title>
+</head>
+<body>
+    <h1>Registro de Humor Diário</h1>
+    <button id="registrarHumorBtn">Registrar Humor</button>
+    
+    <script>
+        // Função para registrar o humor
+        function registrarHumor() {
+            const humor = prompt("Como você está se sentindo hoje? (ex: feliz, triste, ansioso)");
+
+            if (humor) {
+                fetch('/api/humor', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ humor })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    console.log("Humor registrado:", data);
+                    alert("Humor registrado com sucesso!");
+                })
+                .catch(error => {
+                    console.error("Erro ao registrar humor:", error);
+                });
+            } else {
+                console.log("Registro de humor cancelado.");
+            }
+        }
+
+        // Adiciona evento ao botão
+        document.getElementById("registrarHumorBtn").onclick = registrarHumor;
+    </script>
+</body>
+</html>
