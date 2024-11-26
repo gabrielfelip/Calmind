@@ -28,6 +28,9 @@
                 remainingTime = 60;
                 instructionsDisplay.textContent = "Respire fundo... Prepare-se para o relaxamento.";
                 
+                // Enviar o registro para o backend
+                registerRelaxation();
+
                 relaxationInterval = setInterval(() => {
                     if (remainingTime > 0) {
                         updateTimer();
@@ -52,6 +55,24 @@
                 } else if (time % 10 === 5) {
                     instructionsDisplay.textContent = "Expire lentamente...";
                 }
+            }
+
+            // Função para registrar a sessão de relaxamento no backend
+            function registerRelaxation() {
+                fetch('/api/relaxamento', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ message: "Relaxamento iniciado." }), // Adiciona uma mensagem opcional
+                })
+                .then(response => response.json())
+                .then(data => {
+                    console.log("Sessão de relaxamento registrada:", data);
+                })
+                .catch(error => {
+                    console.error("Erro ao registrar relaxamento:", error);
+                });
             }
 
             // Evento para iniciar o exercício ao clicar no botão
