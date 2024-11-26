@@ -44,3 +44,24 @@ app.get('/api/humor', (req, res) => {
 app.listen(port, () => {
     console.log(`Servidor rodando em http://localhost:${port}`);
 });
+
+// Armazena os registros de relaxamento temporariamente em um array
+let relaxamentoLogs = [];
+
+// Endpoint para registrar o início de uma sessão de relaxamento
+app.post('/api/relaxamento', (req, res) => {
+    const data = new Date();
+    const log = {
+        data: data.toISOString(),
+        mensagem: "Sessão de relaxamento iniciada."
+    };
+
+    relaxamentoLogs.push(log);
+    console.log("Relaxamento registrado:", log);
+    res.status(201).json({ message: "Sessão de relaxamento registrada com sucesso!", log });
+});
+
+// Endpoint para obter os registros de relaxamento
+app.get('/api/relaxamento', (req, res) => {
+    res.json(relaxamentoLogs);
+});
